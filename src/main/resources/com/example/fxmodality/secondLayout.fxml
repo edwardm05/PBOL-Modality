@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxmodality.Controller.SecondController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="14.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label text="Nama Siswa :" />
+                  <TextField fx:id="tfNama" prefHeight="25.0" prefWidth="454.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="15.0" prefWidth="560.0" spacing="20.0">
+               <children>
+                  <Label text="KAT">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="tfKat" prefHeight="25.0" prefWidth="53.0" />
+                  <Label text="UTS" />
+                  <TextField fx:id="tfUts" prefWidth="53.0" />
+                  <Label text="UAS" />
+                  <TextField fx:id="tfUas" prefWidth="53.0" />
+               </children>
+            </HBox>
+            <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#btnClicked2" prefHeight="25.0" prefWidth="576.0" text="Masukan Data" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
